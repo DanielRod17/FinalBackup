@@ -9,14 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @class EPLOrderCheck;
+@class FirstView;
 
 @interface EPLAppDelegate : UIResponder <UIApplicationDelegate>
-
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) EPLOrderCheck *viewController;
-
-
-
+@property (nonatomic, retain) NSString *OrderID;
+@property (nonatomic, retain) NSString *tokenReceipt;
+@property (nonatomic, retain) NSString *Usuarillo;
++(EPLAppDelegate *)sharedAppDelegate;
 @end
+
+
 

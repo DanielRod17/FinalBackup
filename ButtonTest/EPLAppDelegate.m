@@ -10,8 +10,14 @@
 
 #import "EPLViewController.h"
 #import "EPLOrderCheck.h"
+#import "EPLReceipt.h"
 @implementation EPLAppDelegate
-
+@synthesize OrderID;
+@synthesize tokenReceipt;
+@synthesize Usuarillo;
++(EPLAppDelegate *)sharedAppDelegate{
+    return(EPLAppDelegate *)[UIApplication sharedApplication].delegate;
+}
 - (void)dealloc
 {
     [_window release];
